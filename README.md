@@ -1,3 +1,5 @@
+# 此项目尚未开始
+
 # LSP 老色批 命令行工具
 ![](https://i.ytimg.com/vi/cJsdRDH80Ew/hqdefault.jpg)
 
