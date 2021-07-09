@@ -1,5 +1,5 @@
 # 注意⚠
-此项目尚未开始，老色批们请稍等片刻
+此项目尚未开始，老色批们先别脱裤子
 
 # LSP 老色批 命令行工具
 ![](https://i.ytimg.com/vi/cJsdRDH80Ew/hqdefault.jpg)
