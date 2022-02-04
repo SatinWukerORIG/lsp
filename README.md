@@ -1,5 +1,4 @@
 # LSP 老色批 命令行工具
-![](https://i.ytimg.com/vi/cJsdRDH80Ew/hqdefault.jpg)
 
 # 宣传片
 [![](screen_shots/cskj.PNG)](https://www.bilibili.com/video/BV1pK41137cB?from=search&seid=16847676413306921011)
