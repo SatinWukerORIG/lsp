@@ -1,6 +1,6 @@
 # LSP 老色批 命令行工具
 
-![](https://bkimg.cdn.bcebos.com/pic/ac6eddc451da81cb39db065d422dc7160924ab189b42?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5/format,f_auto)
+![](screen_shots/bd_lsp_def.jpg)
 
 # 宣传片
 [![](screen_shots/cskj.PNG)](https://www.bilibili.com/video/BV1pK41137cB?from=search&seid=16847676413306921011)
