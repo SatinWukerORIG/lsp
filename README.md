@@ -11,4 +11,4 @@
 ![](https://github.com/Sherlockcxk/lsp/blob/MASTER/screen_shots/new%20value.jpg)
 
 # 运行代码
-[lsp.py](src/lsp.py) 为主程序，
+[lsp.py](src/lsp.py) 为主程序，直接运行即可: `python lsp.py`
