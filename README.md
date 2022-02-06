@@ -12,5 +12,8 @@ from [枪弹轨迹](https://space.bilibili.com/515993?from=search&seid=333400916
 
 ![](https://github.com/Sherlockcxk/lsp/blob/MASTER/screen_shots/new%20value.jpg)
 
+# 运行条件
+
+
 # 运行代码
 [lsp.py](src/lsp.py) 为主程序，直接运行即可: `python lsp.py`
