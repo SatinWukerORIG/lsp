@@ -78,6 +78,6 @@ if __name__ == "__main__":
         check_login()
     else:
         with open("lsp_info.log", "wb") as file:
-            file.write("")
-            exit()
+            file.write(b"")
+            exit("以完成初始设置，再执行此程序即可！")
     main()
