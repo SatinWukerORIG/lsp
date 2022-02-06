@@ -2,14 +2,36 @@ import requests
 import random
 import base64
 import os
+import logging
+from datetime import datetime
 from bs4 import BeautifulSoup
-from argparse import ArgumentParser
 from PIL import Image
 from termcolor import colored
+
 
 headers = {
     "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36"
 }
+
+
+def check_login():
+    with open('lsp_info.log', 'r', encoding='utf-8') as log_f:
+        t = datetime.now()
+        current_time = f"{str(t.day)}/{str(t.month)}/{str(t.year)}"
+
+        try:
+            last_log_time = log_f.readlines()[-1].strip('\n')
+            if last_log_time == current_time:
+                exit("一天只能抽一张图哦！注意身体 " + colored(":p", 'yellow'))
+
+        except IndexError:
+            app_logging()
+
+
+def app_logging():
+    t = datetime.now()
+    log = "lsp_info.log"
+    logging.basicConfig(filename=log, level=logging.DEBUG, format='%(asctime)s', datefmt=f"{str(t.day)}/{str(t.month)}/{str(t.year)}")
 
 
 def choose_img():
@@ -38,6 +60,8 @@ def choose_img():
 
 
 def main():
+    app_logging()   # update the log file
+
     img_name = choose_img()
 
     print(f"显示图片 [{colored(img_name, 'red')}]")
@@ -49,4 +73,9 @@ def main():
 
 
 if __name__ == "__main__":
+    if os.path.exists("lsp_info.log"):
+        check_login()
+    else:
+        with open("lsp_info.log", "wb") as file:
+            file.write("")
     main()
