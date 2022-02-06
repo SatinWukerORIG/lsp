@@ -7,6 +7,7 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 from PIL import Image
 from termcolor import colored
+from sys import exit
 
 
 headers = {
@@ -78,4 +79,5 @@ if __name__ == "__main__":
     else:
         with open("lsp_info.log", "wb") as file:
             file.write("")
+            exit()
     main()
