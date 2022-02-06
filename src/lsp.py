@@ -3,6 +3,9 @@ import random
 import base64
 import os
 import logging
+import subprocess
+import platform
+from shutil import which
 from datetime import datetime
 from bs4 import BeautifulSoup
 from PIL import Image
@@ -14,6 +17,17 @@ headers = {
     "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36"
 }
 
+def init():
+    if os.path.exists("lsp_info.log"):
+        check_login()
+
+    else:
+        with open("lsp_info.log", "wb") as file:
+            file.write(b"")
+
+    if which('imagemagick') and platform.system() == 'Linux':
+        if input("Install imagemagick? [y/n]").lower() == 'y':
+            os.system("sudo apt-get install imagemagick")
 
 def check_login():
     with open('lsp_info.log', 'r', encoding='utf-8') as log_f:
@@ -74,10 +88,5 @@ def main():
 
 
 if __name__ == "__main__":
-    if os.path.exists("lsp_info.log"):
-        check_login()
-    else:
-        with open("lsp_info.log", "wb") as file:
-            file.write(b"")
-            exit("以完成初始设置，再执行此程序即可！")
+    init()
     main()
