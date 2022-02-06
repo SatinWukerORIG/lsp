@@ -1,8 +1,8 @@
 # LSP 老色批 命令行工具
 
-![](screen_shots/bd_lsp_def.jpg)
+![](https://user-images.githubusercontent.com/74630829/152635748-91844641-e7b0-407f-a111-9993f9e8250d.jpeg)
 
-# 宣传片
+# 主理念
 [![](screen_shots/cskj.PNG)](https://www.bilibili.com/video/BV1pK41137cB?from=search&seid=16847676413306921011)
 
 from [枪弹轨迹](https://space.bilibili.com/515993?from=search&seid=3334009161957721793&spm_id_from=333.337.0.0) (已三连)
