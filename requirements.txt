@@ -1,0 +1,6 @@
+logging
+requests
+bs4
+Pillow
+termcolor
+DateTime
