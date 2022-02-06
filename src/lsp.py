@@ -3,7 +3,6 @@ import random
 import base64
 import os
 import logging
-import subprocess
 import platform
 from shutil import which
 from datetime import datetime
@@ -17,17 +16,20 @@ headers = {
     "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36"
 }
 
+
+# 初始函数 设置lsp_info.log | 下载 apt 包
 def init():
     if os.path.exists("lsp_info.log"):
         check_login()
-
     else:
         with open("lsp_info.log", "wb") as file:
             file.write(b"")
+            print("完成初始设置")
 
     if which('imagemagick') and platform.system() == 'Linux':
         if input("Install imagemagick? [y/n]").lower() == 'y':
             os.system("sudo apt-get install imagemagick")
+
 
 def check_login():
     with open('lsp_info.log', 'r', encoding='utf-8') as log_f:
@@ -82,9 +84,9 @@ def main():
     print(f"显示图片 [{colored(img_name, 'red')}]")
 
     # Show image
-    image = Image.open(img_name)
-    image.show()
-    os.remove(img_name)
+    with Image.open(img_name) as image:
+        image.show()
+        os.remove(img_name)
 
 
 if __name__ == "__main__":
