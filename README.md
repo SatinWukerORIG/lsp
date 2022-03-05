@@ -15,6 +15,7 @@ from [枪弹轨迹](https://space.bilibili.com/515993?from=search&seid=333400916
 ![](https://github.com/Sherlockcxk/lsp/blob/MASTER/screen_shots/new%20value.jpg)
 
 # 介绍
+- 每当运行时，lsp会从[图库](lsp-db)随机抽取一张图片
 - 本铯钍库的大部分图片来自于 [Pixiv](https://www.pixiv.net/en/), 部分来自于闲暇时收集的图片
 - 一天只可抽取一张色图，不能抽多了，看多了伤身体:p 🤣
 - 看完的图片会被立刻删除，因为我也不知道为啥哈哈哈
