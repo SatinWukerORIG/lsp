@@ -12,7 +12,9 @@ from [枪弹轨迹](https://space.bilibili.com/515993?from=search&seid=333400916
 
 ![](https://github.com/Sherlockcxk/lsp/blob/MASTER/screen_shots/new%20value.jpg)
 
-# 
+# 介绍
+- 本铯钍库的大部分图片来自于 [Pixiv](https://www.pixiv.net/en/), 部分来自于闲暇时收集的图片
+- 
 
 # 运行条件
 - 运行 `pip install -r requirements.txt`
