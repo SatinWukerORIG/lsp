@@ -1,6 +1,6 @@
 # LSP 老色批 命令行工具
+微信群：
 
-![](https://user-images.githubusercontent.com/74630829/152635748-91844641-e7b0-407f-a111-9993f9e8250d.jpeg)
 
 # 主理念
 [![](screen_shots/cskj.PNG)](https://www.bilibili.com/video/BV1pK41137cB?from=search&seid=16847676413306921011)
