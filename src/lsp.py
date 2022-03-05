@@ -86,7 +86,7 @@ def main():
     # Show image
     with Image.open(img_name) as image:
         image.show()
-        os.remove(img_name)
+    os.remove(img_name)
 
 
 if __name__ == "__main__":
