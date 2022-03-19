@@ -14,7 +14,7 @@ def download(content):
         f_name = ''.join(random.choice(ascii_lowercase) for i in range(12))
     else:
         f_name = name
-    with open(f"{f_name}.lsplol", "wb") as lsp_file:
+    with open(f"lsp{f_name}.lsplol", "wb") as lsp_file:
         lsp_file.write(bytearray(encoded_string))
 
 if "http" in name:
